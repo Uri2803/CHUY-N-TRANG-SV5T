@@ -1,0 +1,258 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.criteria-name-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 10vh;
+}
+.criteria-name-display > .crit-name {
+  margin-right: 50%;
+  width: 40%;
+}
+.float-child-right {
+  float: right;
+}
+.point-criteria-name-display {
+  display: flex;
+  gap: 10px;
+}
+.crit-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.display-left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop-up-inner {
+  position: relative;
+  padding: 30px;
+  width: 35%;
+  background-color: #fff;
+  border: rgb(141, 207, 152) solid 1px;
+  border-radius: 15px;
+  align-self: center;
+}
+.sub-crit-container {
+  display: flex;
+  flex-direction: column;
+}
+.title-with-eles {
+  display: flex;
+  gap: 10px;
+}
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px 20px;
+}
+.crit-form-input {
+  border: rgb(141, 207, 152) solid 1px;
+  border-radius: 5px;
+  width: 75%;
+}
+.flex-with-10px-gap {
+  display: flex;
+  gap: 10px;
+}
+.main-crit-display {
+  display: flex;
+  flex-direction: column;
+}
+.main-crit-display-item {
+  width: 100%;
+}
+.flex-middle-vert-hori {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.margin-left-3 {
+  margin-left: 3%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-5 {
+  width: 5%;
+}
+.width-8 {
+  width: 8%;
+}
+.width-10 {
+  width: 10%;
+}
+.width-12 {
+  width: 12%;
+}
+.height-6 {
+  height: 6%;
+}
+.form-select-custom {
+  border-style: dotted;
+}
+.dtable-text-display {
+  text-align: center;
+  vertical-align: bottom;
+}
+.crit-num-soft-info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+/* student area */
+.submission-section {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+.submission-section > .left-s {
+  /* border: 1px solid green; */
+  margin-left: 5%;
+  margin-right: 20%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 40%;
+  height: 6vh;
+}
+.submission-section > .left-s > label {
+  width: 40%;
+}
+
+.submission-section > * > input {
+  margin-bottom: 1vh;
+  height: 4vh;
+}
+
+.submission-section > .right-s {
+  /* border: 1px solid yellow; */
+  margin-left: 15%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  height: 6vh;
+  gap: 10px;
+}
+.submission-section > .right-s > button {
+  height: 4vh;
+  margin-bottom: 0.9vh;
+  padding-bottom: 8%;
+  background-color: #39f;
+}
+.submission-section > .right-s > div {
+  margin-left: 2%;
+}
+.submission-section > .only-child {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  gap: 10px;
+  width: 60%;
+  height: 6vh;
+  /* border: 1px solid orange; */
+}
+.submission-section > .only-child > label {
+  width: 25%;
+}
+/* #submission-section > .only-child > .txtinput {
+  width: 15%;
+}
+#custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+#custom-file-input::before {
+  color: #fff;
+  content: "Chọn file";
+  display: inline-block;
+  background: #39f;
+  border: 1px solid #39f;
+  border-radius: 3px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  outline: none;
+  cursor: pointer;
+  font-size: 10pt;
+  width: 30%;
+  text-align: center;
+  margin-right: 0;
+  padding-right: 0;
+}
+#custom-file-input:hover::before {
+  border-color: black;
+}
+#custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+} */
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  background: #39f;
+  border: 1px solid #39f;
+  border-radius: 3px;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 0%;
+  color: white;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
